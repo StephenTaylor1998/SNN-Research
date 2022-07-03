@@ -86,6 +86,7 @@ def visualise_connectivity(S):
     ylabel('Target neuron index')
     show()
 
+
 visualise_connectivity(S)
 
 
@@ -131,7 +132,7 @@ W = where(delta_t>0, A_pre*exp(-delta_t/tau_pre), A_post*exp(delta_t/tau_post))
 plot(delta_t/ms, W)
 xlabel(r'$\Delta t$ (ms)')
 ylabel('W')
-axhline(0, ls='-', c='k')
+axhline(0, ls='--', c='k')
 show()
 
 # %%
